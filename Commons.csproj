@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A2480512-B9F4-4369-8827-0CF23DD784E8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mizuochi.Commons</RootNamespace>
+    <AssemblyName>Commons</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>bin\Debug\Commons.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>bin\Release\Commons.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FirebirdSql.Data.FirebirdClient">
+      <HintPath>..\package\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Codes\Calculations\Account.cs" />
+    <Compile Include="Codes\Calculations\Calculation.cs" />
+    <Compile Include="Codes\Calculations\MizuochiMath.cs" />
+    <Compile Include="Codes\ClassExtensions\ColorExtension.cs" />
+    <Compile Include="Codes\ClassExtensions\DecimalExtension.cs" />
+    <Compile Include="Codes\ClassExtensions\GenericsExtension.cs" />
+    <Compile Include="Codes\ClassExtensions\Int32Extension.cs" />
+    <Compile Include="Codes\ClassExtensions\StringExtension.cs" />
+    <Compile Include="Codes\ClassExtensions\IEnumerableExtension.cs" />
+    <Compile Include="Codes\ClassExtensions\IEnumerableGenericsExtension.cs" />
+    <Compile Include="Codes\ClassExtensions\DataTableExtension.cs" />
+    <Compile Include="Codes\ClassExtensions\ButtonExtension.cs" />
+    <Compile Include="Codes\ClassExtensions\ComboBoxExtension.cs" />
+    <Compile Include="Codes\ClassExtensions\ContainerControlExtension.cs" />
+    <Compile Include="Codes\ClassExtensions\ControlExtension.cs" />
+    <Compile Include="Codes\ClassExtensions\DateTimeExtension.cs" />
+    <Compile Include="Codes\ClassExtensions\TypeExtension.cs" />
+    <Compile Include="Codes\ClassExtensions\DataGridViewCellExtension.cs" />
+    <Compile Include="Codes\ClassExtensions\DataGridViewColumnExtension.cs" />
+    <Compile Include="Codes\ClassExtensions\TaskExtension.cs" />
+    <Compile Include="Codes\Databases\DatabaseInfomation.cs" />
+    <Compile Include="Codes\Databases\FireBird\Command.cs" />
+    <Compile Include="Codes\Databases\FireBird\Connection.cs" />
+    <Compile Include="Codes\Databases\FireBird\ConnectionSubstance.cs" />
+    <Compile Include="Codes\Databases\ICommand.cs" />
+    <Compile Include="Codes\Databases\FireBird\Transaction.cs" />
+    <Compile Include="Codes\Databases\FireBird\TransactionSubstance.cs" />
+    <Compile Include="Codes\Databases\SqlServer\Command.cs" />
+    <Compile Include="Codes\Databases\SqlServer\Connection.cs" />
+    <Compile Include="Codes\Databases\SqlServer\DBType.cs" />
+    <Compile Include="Codes\Databases\IConnection.cs" />
+    <Compile Include="Codes\Databases\SqlValueConvert.cs" />
+    <Compile Include="Codes\Dates\Holiday.cs" />
+    <Compile Include="Codes\Dates\HolidayCalculation.cs" />
+    <Compile Include="Codes\Dates\HolidayExtendedWeekend.cs" />
+    <Compile Include="Codes\Dates\HolidayStatic.cs" />
+    <Compile Include="Codes\Diagnostics\UtilityStopwatch.cs" />
+    <Compile Include="Codes\Events\ExceptionEventHandler.cs" />
+    <Compile Include="Codes\Excel\ConstWrappers\Constants.cs" />
+    <Compile Include="Codes\Excel\ConstWrappers\XlHAlign.cs" />
+    <Compile Include="Codes\Excel\ConstWrappers\XlVAlign.cs" />
+    <Compile Include="Codes\Excel\ExcelApplication.cs" />
+    <Compile Include="Codes\Excel\Sheets.cs" />
+    <Compile Include="Codes\Excel\Workbook.cs" />
+    <Compile Include="Codes\Excel\Workbooks.cs" />
+    <Compile Include="Codes\Excel\Worksheet.cs" />
+    <Compile Include="Codes\Excel\ConstWrappers\XlWBATemplate.cs" />
+    <Compile Include="Codes\Forms\CancelableProgress.cs" />
+    <Compile Include="Codes\Forms\Grid\DataGridViewComparer.cs" />
+    <Compile Include="Codes\Forms\Grid\ExtendDataGridView.cs" />
+    <Compile Include="Codes\Forms\Grid\GridComparer.cs" />
+    <Compile Include="Codes\Forms\Grid\GridToExcelConverter.cs" />
+    <Compile Include="Codes\Forms\Grid\ListViewComparer.cs" />
+    <Compile Include="Codes\Forms\Waiter.cs" />
+    <Compile Include="Codes\Graphics\Filters\AveragingFilter.cs" />
+    <Compile Include="Codes\Graphics\Filters\Filter.cs" />
+    <Compile Include="Codes\Graphics\Filters\SmoothingFilter.cs" />
+    <Compile Include="Codes\Graphics\Filters\WhiteningFilter.cs" />
+    <Compile Include="Codes\Informations\ClientInfo.cs" />
+    <Compile Include="Codes\Logs\Log.cs" />
+    <Compile Include="Codes\Threads\TaskManager.cs" />
+    <Compile Include="Codes\Types\EnumComboHelper.cs" />
+    <Compile Include="Codes\Informations\ApplicationInfo.cs" />
+    <Compile Include="Codes\IO\XmlParse.cs" />
+    <Compile Include="Codes\Security\Encryption.cs" />
+    <Compile Include="Codes\Types\EnumDisplayAttribute.cs" />
+    <Compile Include="Codes\Types\Enumeration.cs" />
+    <Compile Include="Codes\Types\GenericUtility.cs" />
+    <Compile Include="Codes\Types\GridAttribute.cs" />
+    <Compile Include="Codes\Validations\Validator.cs" />
+    <Compile Include="Codes\Windows\ProcessMessage.cs" />
+    <Compile Include="Codes\Xml\Messages\MessageRecord.cs" />
+    <Compile Include="Codes\Xml\Messages\MessageRoot.cs" />
+    <Compile Include="Controls\CancelableProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CancelableProgress.Designer.cs">
+      <DependentUpon>CancelableProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CodeComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CodeComboBox.Designer.cs">
+      <DependentUpon>CodeComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NumericTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NumericTextBox.Designer.cs">
+      <DependentUpon>NumericTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DateRange.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DateRange.Designer.cs">
+      <DependentUpon>DateRange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DateTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DateTextBox.Designer.cs">
+      <DependentUpon>DateTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Events\ValueChangeEventArgs.cs" />
+    <Compile Include="Controls\TranslucentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TranslucentControl.Designer.cs">
+      <DependentUpon>TranslucentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Codes\IO\Registry.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\CancelableProgress.resx">
+      <DependentUpon>CancelableProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CodeComboBox.resx">
+      <DependentUpon>CodeComboBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NumericTextBox.resx">
+      <DependentUpon>NumericTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DateRange.resx">
+      <DependentUpon>DateRange.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DateTextBox.resx">
+      <DependentUpon>DateTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
